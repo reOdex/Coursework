@@ -54,10 +54,8 @@ for questionCount in range(questionNum):
     print(artist)
     print(song[0])
 
-    # Prompt for a guess:
     guess = input("What is the song called?\n> ")
 
-    # Let the user guess until they hit the max tries:
     guessCount = 0
     guessCorrect = False
     while True:
@@ -75,8 +73,6 @@ for questionCount in range(questionNum):
         # the max guesses yet, so try again:
         guess = input("Incorrect! Try again:\n> ")
 
-    # We're out of the while loop, so either the song was guessed
-    # correctly, or we hit the max number of guesses. Find out which:
     if guessCorrect:
         print("Answer correct!")
     else:
